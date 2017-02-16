@@ -1,25 +1,26 @@
-package com.sogapps.sbdassessment.ADPCodeChallenge;
+<!DOCTYPE html>
+<html>
+<body>
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+<p id="demo"></p>
 
-import java.util.TreeMap;
+<script>
+var numb = [1,2,3,4,5,6,7,8,9,10,100,112,113];
+        var evenNumbers = "";
+        var i;
 
-/**
- * Created by AdesegunAdesegun on 06/01/2017.
- */
+        for (i = 0; i < numb.length; i++) {
 
-public class ADPCodeChallengeClass extends AppCompatActivity {
+        if (numb[i] % 2 == 0)
+        {
+        evenNumbers += numb[i] + "<br>";
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        document.getElementById("demo").innerHTML = evenNumbers;
+        }
 
-        // Run Test Code
-        // Call "" Method to run Function.
+        }
 
-    }
+</script>
 
-
-
-}
+</body>
+</html>
